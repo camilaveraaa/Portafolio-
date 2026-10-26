@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Camila Palomino Vera">
+    <meta name="description" content="Portafolio personal de diseño, proyectos y habilidades.">
+    <meta name="keywords" content="portafolio, diseño, proyectos, HTML, CSS, Bootstrap">
+    <title>Mi portafolio personal</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+</head>
+<body>
+    <header class="encabezado text-center">
+        <p class="subtitulo">PORTAFOLIO PERSONAL</p>
+        <h1>Hola, soy Camila</h1>
+        <p>Creatividad, ideas y proyectos que me representan.</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark navegacion">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">Mi portafolio</a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menu"
+                aria-controls="menu"
+                aria-expanded="false"
+                aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menu">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#inicio">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#multimedia">Multimedia</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main>
+        <section id="inicio" class="seccion-inicio container">
+            <div class="row align-items-center g-4">
+                <div class="col-md-6">
+                    <p class="subtitulo">BIENVENIDO A MI ESPACIO</p>
+                    <h2>Diseño, creatividad y aprendizaje</h2>
+                    <p>
+                        Este es mi portafolio personal. Aquí comparto algunos de mis proyectos, mis intereses y las habilidades que he desarrollado durante mi formación.
+                    </p>
+                    <a href="#proyectos" class="btn boton-principal">
+                        Ver mis proyectos
+                    </a>
+                </div>
+                <div class="col-md-6 text-center">
+                    <img src="imagenes/perfil.jpg"
+                        alt="Fotografía personal"
+                        class="img-fluid imagen-perfil">
+                </div>
+            </div>
+        </section>
+        <section id="sobre-mi" class="seccion seccion-rosa">
+            <div class="container">
+                <h2 class="text-center">Sobre mí</h2>
+                <div class="row align-items-center g-4 mt-3">
+                    <div class="col-md-4 text-center">
+                        <i class="bi bi-heart"></i>
+                    </div>
+                    <div class="col-md-8">
+                        <p>
+                            Me considero una persona extrovertida, amigable y creativa. Me gusta conocer personas, aprender cosas nuevas, reír y compartir momentos especiales. Disfruto mucho pasar tiempo con las personas que amo, porque para mí es importante crear recuerdos bonitos. Me gusta transmitir alegría y buena energía a los demás.
+                        </p>
+                        <p>
+                            Estudio en la Universidad Tecnológica de León en la carrera de Tecnologías de la Información en la especialidad de Entornos Virtuales y Negocios Digitales. Me interesa el diseño digital al igual que marketing digital. En mis proyectos busco combinar funcionalidad, creatividad y una presentación visual agradable. Trato de mejorar día con día y esforzarme al máximo.
+                        </p>
+                        <button class="btn boton-secundario"
+                            type="button"
+                            data-bs-toggle="collapse"
+                            data-bs-target="#masSobreMi"
+                            aria-expanded="false"
+                            aria-controls="masSobreMi">
+                            Conoce más sobre mí
+                        </button>
+                        <div class="collapse mt-3" id="masSobreMi">
+                            <div class="card card-body">
+                                Disfruto aprender mediante la práctica, experimentar con diferentes estilos y mejorar mis habilidades en cada proyecto.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section id="proyectos" class="seccion container">
+            <h2 class="text-center">Mis proyectos</h2>
+            <p class="text-center">
+                Te muestro algunos trabajos que he realizado.
+            </p>
+            <div class="row g-4 mt-2">
+                <div class="col-md-4">
+                    <article class="card tarjeta h-100">
+                        <img src="imagenes/proyecto1.jpg"
+                            class="card-img-top"
+                            alt="Proyecto de diseño gráfico">
+                            <div class="card-body">
+                            <h3 class="card-title">Modelado y Animación 3D</h3>
+                            <p class="card-text">
+                                Realicé proyectos de modelado tridimensional utilizando Blender, trabajando con formas, materiales, iluminación y cámaras para crear objetos y escenas digitales.
+                            </p>
+                            <button class="btn boton-secundario"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal1">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card tarjeta h-100">
+                        <img src="imagenes/proyecto2.jpg"
+                            class="card-img-top"
+                            alt="Proyecto de diseño web">
+                            <div class="card-body">
+                            <h3 class="card-title">Desarrollo web</h3>
+                            <p class="card-text">
+                                Desarrollé una página web utilizando HTML y CSS, incorporando herramientas de Bootstrap para crear un diseño atractivo.
+                            </p>
+                            <button class="btn boton-secundario"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal2">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </article>
+                </div>
+                <div class="col-md-4">
+                    <article class="card tarjeta h-100">
+                        <img src="imagenes/proyecto3.jpg"
+                            class="card-img-top"
+                            alt="Proyecto creativo">
+                            <div class="card-body">
+                            <h3 class="card-title">Diseño UI/UX</h3>
+                            <p class="card-text">
+                                Creé propuestas de interfaces digitales organizando colores, tipografías, iconos y elementos visuales.
+                            </p>
+                            <button class="btn boton-secundario"
+                                data-bs-toggle="modal"
+                                data-bs-target="#modal3">
+                                Ver detalles
+                            </button>
+                        </div>
+                    </article>
+                </div>
+
+            </div>
+        </section>
+        <div class="modal fade" id="modal1" tabindex="-1"
+            aria-labelledby="tituloModal1" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="tituloModal1">
+                            Modelado y Animación 3D
+                        </h2>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este trabajo me permitió desarrollar mi creatividad y mejorar mis habilidades de diseño en 3D.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal2" tabindex="-1"
+            aria-labelledby="tituloModal2" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="tituloModal2">
+                            Desarrollo web
+                        </h2>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        Este proyecto me permitió reforzar mis conocimientos de desarrollo web, diseño responsivo y estructura de páginas, combinando creatividad y funcionalidad en una misma propuesta.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="modal fade" id="modal3" tabindex="-1"
+            aria-labelledby="tituloModal3" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h2 class="modal-title fs-5" id="tituloModal3">
+                            Diseño UI/UX
+                        </h2>
+                        <button type="button" class="btn-close"
+                            data-bs-dismiss="modal" aria-label="Cerrar"></button>
+                    </div>
+                    <div class="modal-body">
+                        Mi objetivo fue desarrollar diseños atractivos, intuitivos y fáciles de utilizar, teniendo en cuenta las necesidades de los usuarios.
+                    </div>
+                </div>
+            </div>
+        </div>
+        <section id="multimedia" class="seccion seccion-rosa">
+    <div class="container">
+        <h2 class="text-center">Mis intereses</h2>
+        <p class="text-center mt-3">
+            Estas son algunas de las actividades que disfruto realizar.
+        </p>
+        <div id="carruselHobbies"
+             class="carousel slide mt-4"
+             data-bs-ride="carousel">
+             <div class="carousel-indicators">
+                <button type="button"
+                        data-bs-target="#carruselHobbies"
+                        data-bs-slide-to="0"
+                        class="active"
+                        aria-current="true"
+                        aria-label="Hobbie 1"></button>
+                        <button type="button"
+                        data-bs-target="#carruselHobbies"
+                        data-bs-slide-to="1"
+                        aria-label="Hobbie 2"></button>
+                        <button type="button"
+                        data-bs-target="#carruselHobbies"
+                        data-bs-slide-to="2"
+                        aria-label="Hobbie 3"></button>
+            </div>
+            <div class="carousel-inner carrusel-contenido">
+                <div class="carousel-item active">
+                    <img src="imagenes/hobbie1.jpg"
+                         class="d-block w-100"
+                         alt="Practicar violín">
+                        <div class="carousel-caption">
+                        <h3>Practicar violín</h3>
+                        <p>Me gusta practicar el violín porque disfruto la música y me permite expresar mis emociones. Además, me ayuda a relajarme y aprender nuevas melodías.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbie2.jpg"
+                         class="d-block w-100"
+                         alt="Hostess en eventos">
+                         <div class="carousel-caption">
+                        <h3>Hostess en eventos</h3>
+                        <p>Me gusta trabajar como hostess en eventos porque disfruto convivir con las personas, conocer gente nueva y brindar una buena atención. Además, me permite desarrollar mis habilidades de comunicación y organización.</p>
+                    </div>
+                </div>
+                <div class="carousel-item">
+                    <img src="imagenes/hobbie3.jpg"
+                         class="d-block w-100"
+                         alt="Cine">
+                         <div class="carousel-caption">
+                        <h3>Cine</h3>
+                        <p>Me gusta ir al cine porque me permite desconectarme de la rutina, disfrutar y conectar con las películas y pasar un buen rato con las personas que me acompañan.</p>
+                    </div>
+                </div>
+            </div>
+            <button class="carousel-control-prev"
+                    type="button"
+                    data-bs-target="#carruselHobbies"
+                    data-bs-slide="prev"
+                    aria-label="Hobby anterior">
+                    <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next"
+                    type="button"
+                    data-bs-target="#carruselHobbies"
+                    data-bs-slide="next"
+                    aria-label="Siguiente hobby">
+                    <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+                <div class="row g-4 mt-4">
+                    <div class="col-md-6">
+                        <h3><i class="bi bi-play-circle"></i> Mi video</h3>
+                        <video controls class="multimedia">
+                            <source src="media/video-portafolio.mp4"
+                                type="video/mp4">
+                        </video>
+                    </div>
+                    <div class="col-md-6">
+                        <h3><i class="bi bi-music-note-beamed"></i> Mi canción favorita</h3>
+                        <p>Mi canción favorita es “Brooklyn Baby” de Lana Del Rey. Me gusta por su melodía relajada y su estilo alternativo y nostálgico. Me transmite una sensación de tranquilidad y libertad, y disfruto mucho la atmósfera que crea. Es una canción que puedo escuchar varias veces y que me encanta por su personalidad y estilo único.</p>
+                        <audio controls class="w-100">
+                            <source src="media/audio-portafolio.mp3"
+                                type="audio/mpeg">
+                        </audio>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="pie-pagina text-center">
+        <p>2026 Mi portafolio personal</p>
+        <a href="contacto.html">Contáctame</a>
+        <p>
+            <i class="bi bi-heart-fill"></i>
+            Gracias por visitar mi página
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

@@ -1,0 +1,386 @@
+:root {
+    --color-rosa: #f5dce5;
+    --color-rosa-claro: #fff7fa;
+    --color-vino: #722c46;
+    --color-vino-oscuro: #4b1d30;
+    --color-crema: #fffaf5;
+    --color-texto: #382b30;
+
+    --fuente-titulos: "Playfair Display", serif;
+    --fuente-texto: "DM Sans", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding-top: 20px;
+}
+
+body {
+    margin: 0;
+    background-color: var(--color-crema);
+    color: var(--color-texto);
+    font-family: var(--fuente-texto);
+    line-height: 1.7;
+}
+
+h1,
+h2,
+h3,
+h4 {
+    font-family: var(--fuente-titulos);
+    color: var(--color-vino);
+}
+
+h1 {
+    font-size: clamp(2.3rem, 6vw, 4rem);
+    font-weight: 700;
+}
+
+h2 {
+    font-size: clamp(1.8rem, 4vw, 2.6rem);
+    margin-bottom: 20px;
+}
+
+h3 {
+    font-size: 1.5rem;
+}
+
+p {
+    margin-bottom: 16px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.encabezado {
+    background-color: var(--color-rosa);
+    padding: 65px 20px;
+}
+
+.encabezado h1 {
+    margin-bottom: 15px;
+}
+
+.encabezado p {
+    margin-bottom: 0;
+}
+
+.subtitulo {
+    color: var(--color-vino);
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 3px;
+}
+
+.navegacion {
+    background-color: var(--color-vino);
+    padding: 14px 0;
+}
+
+.navegacion .navbar-brand {
+    color: white;
+    font-family: var(--fuente-titulos);
+    font-size: 1.4rem;
+    font-weight: 700;
+}
+
+.navegacion .nav-link {
+    color: white;
+    margin-left: 10px;
+    transition: color 0.3s ease;
+}
+
+.navegacion .nav-link:hover,
+.navegacion .nav-link:focus {
+    color: var(--color-rosa);
+}
+
+.seccion-inicio {
+    padding-top: 75px;
+    padding-bottom: 75px;
+}
+
+.seccion-inicio h2 {
+    font-size: clamp(2rem, 4vw, 3rem);
+}
+
+.imagen-perfil {
+    border: none;
+    outline: none;
+    box-shadow: none;
+}
+
+.seccion {
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.seccion-rosa {
+    background-color: var(--color-rosa-claro);
+    padding-top: 65px;
+    padding-bottom: 65px;
+}
+
+.boton-principal,
+.boton-secundario {
+    display: inline-block;
+    border-radius: 25px;
+    padding: 11px 24px;
+    font-weight: 700;
+    transition:
+        background-color 0.3s ease,
+        transform 0.3s ease;
+}
+
+.boton-principal {
+    background-color: var(--color-vino);
+    color: white;
+    border: 2px solid var(--color-vino);
+}
+
+.boton-principal:hover {
+    background-color: var(--color-vino-oscuro);
+    color: white;
+    border-color: var(--color-vino-oscuro);
+    transform: translateY(-2px);
+}
+
+.boton-secundario {
+    background-color: var(--color-rosa);
+    color: var(--color-vino);
+    border: 2px solid var(--color-rosa);
+}
+
+.boton-secundario:hover {
+    background-color: var(--color-vino);
+    color: white;
+    border-color: var(--color-vino);
+}
+
+.icono-grande {
+    color: var(--color-vino);
+    font-size: 8rem;
+}
+
+.bi-heart-fill {
+    color: var(--color-rosa);
+}
+
+.tarjeta {
+    overflow: hidden;
+    border: 1px solid #ead5de;
+    border-radius: 15px;
+    background-color: white;
+    box-shadow: 0 5px 18px rgba(75, 29, 48, 0.07);
+    transition:
+        transform 0.3s ease,
+        box-shadow 0.3s ease;
+}
+
+.tarjeta:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 12px 25px rgba(75, 29, 48, 0.13);
+}
+
+.tarjeta .card-img-top {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.tarjeta .card-body {
+    padding: 25px;
+}
+
+.tarjeta .card-title {
+    font-size: 1.5rem;
+}
+
+.modal-content {
+    background-color: var(--color-crema);
+    border: 1px solid var(--color-rosa);
+    border-radius: 15px;
+}
+
+.modal-header {
+    border-bottom-color: var(--color-rosa);
+}
+
+.card-body {
+    border-radius: 10px;
+}
+
+.carrusel-contenido {
+    max-width: 750px;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 15px;
+}
+
+.carrusel-contenido img {
+    width: 100%;
+    height: 420px;
+    object-fit: cover;
+}
+
+#carruselHobbies .carousel-caption h3 {
+    color: #4e0d25;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 0 1px 3px #ffffff;
+}
+
+#carruselHobbies .carousel-caption p {
+    color: #ffffff;
+    font-weight: 700;
+    text-align: center;
+    text-shadow: 1px 1px 4px #382b30;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: var(--color-vino);
+    border-radius: 50%;
+    padding: 22px;
+}
+
+.multimedia {
+    display: block;
+    width: 100%;
+    max-height: 350px;
+    background-color: var(--color-vino-oscuro);
+    border-radius: 12px;
+}
+
+audio {
+    accent-color: var(--color-vino);
+}
+
+.contacto {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ead5de;
+    border-radius: 15px;
+    box-shadow: 0 5px 18px rgba(75, 29, 48, 0.06);
+}
+
+.contacto-label {
+    display: block;
+    color: var(--color-vino);
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.contacto-control {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #d9b7c5;
+    border-radius: 8px;
+    font-family: var(--fuente-texto);
+}
+
+.contacto-control:focus {
+    border-color: var(--color-vino);
+    box-shadow: 0 0 0 0.2rem rgba(114, 44, 70, 0.15);
+    outline: none;
+}
+
+.contacto-control::placeholder {
+    color: #8b7a81;
+}
+
+.texto-ayuda {
+    font-size: 0.85rem;
+    color: #6b5960;
+}
+
+.contactos {
+    padding: 25px;
+    background-color: white;
+    border: 1px solid #ead5de;
+    border-radius: 15px;
+}
+
+.contactos i {
+    color: var(--color-vino);
+    margin-right: 8px;
+    font-size: 1.1rem;
+}
+
+.contactos strong {
+    color: var(--color-vino);
+}
+
+.contactos p {
+    overflow-wrap: anywhere;
+}
+
+.mapa-contenedor {
+    width: 100%;
+    overflow: hidden;
+    border-radius: 15px;
+    border: 3px solid var(--color-rosa);
+}
+
+.mapa-contenedor iframe {
+    display: block;
+    width: 100%;
+    height: 350px;
+    border: 0;
+}
+
+.pie-pagina {
+    padding: 35px 20px;
+    background-color: var(--color-vino);
+    color: white;
+}
+
+.pie-pagina p {
+    margin: 8px 0;
+}
+
+.pie-pagina a {
+    color: var(--color-rosa);
+    text-decoration: none;
+}
+
+.pie-pagina a:hover {
+    text-decoration: underline;
+}
+
+@media (max-width: 768px) {
+
+    .encabezado {
+        padding: 45px 18px;
+    }
+
+    .seccion-inicio,
+    .seccion,
+    .seccion-rosa {
+        padding-top: 45px;
+        padding-bottom: 45px;
+    }
+
+    .imagen-perfil {
+        height: 300px;
+        max-width: 320px;
+    }
+
+    .carrusel-contenido img {
+        height: 280px;
+    }
+
+    .navegacion .nav-link {
+        margin-left: 0;
+        padding: 10px 0;
+    }
+
+    .mapa-contenedor iframe {
+        height: 300px;
+    }
+}

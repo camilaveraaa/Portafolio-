@@ -1,0 +1,170 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Camila Palomino Vera">
+    <meta name="description" content="Página de contacto del portafolio personal de Camila Palomino Vera.">
+    <meta name="keywords" content="contacto, portafolio, diseño, proyectos">
+    <title>Contacto - Mi portafolio</title>
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilos.css">
+    <link rel="shortcut icon" href="iconos/favicon.ico" type="image/x-icon">
+    <body>
+        <header class="encabezado encabezado-contacto text-center">
+        <p class="subtitulo">ESTOY PARA ESCUCHARTE</p>
+        <h1>Contacto</h1>
+        <p>¿Tienes alguna pregunta o propuesta? Contáctame.</p>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-dark navegacion">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                Mi portafolio
+            </a>
+            <button class="navbar-toggler" type="button"
+                data-bs-toggle="collapse"
+                data-bs-target="#menuContacto"
+                aria-controls="menuContacto"
+                aria-expanded="false"
+                aria-label="Mostrar menú">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="menuContacto">
+                <ul class="navbar-nav ms-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Inicio</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#sobre-mi">Sobre mí</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html#proyectos">Proyectos</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="contacto.html">Contacto</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <main class="container seccion">
+        <div class="text-center mb-5">
+            <h2>Contáctame</h2>
+            <p>
+                Si quieres conocer más sobre mí o ponerte en contacto conmigo, puedes encontrarme en los siguientes medios.
+            </p>
+        </div>
+        <div class="row g-5">
+            <section class="col-lg-6" aria-labelledby="tituloFormulario">
+                <div class="contacto">
+                    <h2 id="tituloFormulario">Envíame un mensaje</h2>
+                    <p>
+                        Completa los siguientes campos para compartir tus dudas, ideas o propuestas.
+                    </p>
+                    <form action="#" method="post">
+                        <div class="mb-3">
+                            <label for="nombre" class="contacto-label">
+                                Nombre
+                            </label>
+                            <input type="text"
+                                class="form-control contacto-control"
+                                id="nombre"
+                                name="nombre"
+                                placeholder="Escribe tu nombre"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="correo" class="contacto-label">
+                                Correo electrónico
+                            </label>
+                            <input type="email"
+                                class="form-control contacto-control"
+                                id="correo"
+                                name="correo"
+                                placeholder="ejemplo@correo.com"
+                                required>
+                        </div>
+                        <div class="mb-3">
+                            <label for="asunto" class="contacto-label">
+                                Asunto
+                            </label>
+                            <select class="form-select contacto-control"
+                                id="asunto"
+                                name="asunto"
+                                required>
+                                <option value="">Selecciona una opción</option>
+                                <option value="proyecto">Proyecto</option>
+                                <option value="informacion">Información</option>
+                                <option value="colaboracion">Colaboración</option>
+                                <option value="otro">Otro</option>
+                            </select>
+                        </div>
+                        <div class="mb-3">
+                            <label for="mensaje" class="contacto-label">
+                                Mensaje
+                            </label>
+                            <textarea class="form-control contacto-control"
+                                id="mensaje"
+                                name="mensaje"
+                                rows="5"
+                                placeholder="Escribe tu mensaje"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="boton-principal">
+                            <i class="bi bi-send-fill"></i>
+                            Enviar mensaje
+                        </button>
+                        <p class="texto-ayuda mt-3 mb-0">
+                            Todos los campos son obligatorios.
+                        </p>
+                    </form>
+                </div>
+            </section>
+            <div class="col-lg-6">
+                <section class="mb-5" aria-labelledby="tituloContactos">
+                    <h2 id="tituloContactos">Mis contactos</h2>
+                    <div class="contactos mt-4">
+                        <div class="mb-4">
+                            <i class="bi bi-envelope-fill"></i>
+                            <strong>Correo electrónico</strong>
+                            <p class="mb-0">camilavera140@gmail.com</p>
+                        </div>
+                        <div class="mb-4">
+                            <i class="bi bi-instagram"></i>
+                            <strong>Instagram</strong>
+                            <p class="mb-0">@camilaveraaaa</p>
+                        </div>
+                    </div>
+                </section>
+                <section aria-labelledby="tituloMapa">
+                    <h2 id="tituloMapa">Ubicación</h2>
+                    <p>Me puedes encontrar en:</p>
+                    <div class="mapa-contenedor">
+                        <iframe
+                            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d29781.062373341058!2d-101.61620014148245!3d21.087323456879158!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x842b963652f40f0d%3A0xa7d88da0ad8eff8a!2sUniversidad%20Tecnol%C3%B3gica%20de%20Le%C3%B3n!5e0!3m2!1ses-419!2smx!4v1792912538231!5m2!1ses-419!2smx"
+                            title="Ubicación de la Universidad Tecnológica de León"
+                            loading="lazy"
+                            referrerpolicy="strict-origin-when-cross-origin"
+                            allowfullscreen>
+                        </iframe>
+                    </div>
+                    <p class="mt-3">
+                        <i class="bi bi-geo-alt-fill"></i>
+                        Universidad Tecnológica de León
+                    </p>
+                </section>
+            </div>
+        </div>
+    </main>
+    <footer class="pie-pagina text-center">
+        <p>2026 Mi portafolio personal</p>
+        <a href="index.html">Volver al inicio</a>
+        <p>
+            <i class="bi bi-heart-fill"></i>
+            Gracias por visitar mi página
+        </p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
